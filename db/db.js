@@ -7,6 +7,8 @@ var connection = mysql.createConnection({
   database: 'backend'
 });
 
+
+
 connection.connect(function(err) {
   if (err) throw err;
   console.log('connected!');
