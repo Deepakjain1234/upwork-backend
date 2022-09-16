@@ -31,6 +31,10 @@ app.post('/register', function(req, res, next) {
   })
 });
 
+app.get("/", (req, res) => {
+  res.send("<html> <head>server Response</head><body><h1> This page was render direcly from the server <p>Hello there welcome to my website</p></h1></body></html>");
+});
+
 app.post('/login', function(req, res, next) {
   var email = req.body.email;
   var password = req.body.password;
